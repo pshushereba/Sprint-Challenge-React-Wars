@@ -21,8 +21,9 @@ const Character = (props) => {
                     films={character.films} 
                     mass={character.mass} 
                     hair_color={character.hair_color}
-                    className={'cardStyle'}
-                    key={character[i]}  />)
+                    eye_color={character.eye_color}
+                    skin_color={character.skin_color}
+                      />)
             })}
         </WrapperDiv>
      </>

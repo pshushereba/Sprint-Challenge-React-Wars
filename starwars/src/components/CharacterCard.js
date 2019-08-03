@@ -4,10 +4,16 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
     margin: 30px;
+    align-items: stretch;
 `;
 
 const Paragraph = styled.p`
     color: dodgerblue;
+`;
+
+const CustomHeader = styled.h1`
+    font-size: 2rem;
+    color: #e3e3e3;
 `;
 
 const CharacterCard = (props) => {
@@ -16,11 +22,13 @@ const CharacterCard = (props) => {
             <CardWrapper>
                 <Card>
                 <Card.Content>
-                    <Card.Header>{props.name}</Card.Header>
+                    <CustomHeader>{props.name}</CustomHeader>
                     <Card.Meta>{props.gender}</Card.Meta>
-                    <Paragraph>Hair Color: {props.hair_color}</Paragraph>
-                    <Card.Description>Height: {props.height}</Card.Description>
-                    <Card.Description>Mass: {props.mass}</Card.Description>
+                    <Card.Description>Hair Color: {props.hair_color}</Card.Description>
+                    <Card.Description>Eye Color: {props.eye_color}</Card.Description>
+                    <Card.Description>Skin Color: {props.skin_color}</Card.Description>
+                    <Paragraph>Height: {props.height}</Paragraph>
+                    <Paragraph>Mass: {props.mass}</Paragraph>
                 </Card.Content>
                 </Card>
             </CardWrapper>
