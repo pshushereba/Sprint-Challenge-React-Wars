@@ -23,6 +23,7 @@ const App = () => {
     })
   }, []);
 
+  console.log(charData);
   
 
 
